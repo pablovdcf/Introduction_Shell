@@ -9,40 +9,52 @@
 #2. LINEA 2: EL NOMBRE DEL USUARIO Y LA FECHA EN EL MOMENTO DE LA CREACIÓN.
 #6. (BONUS) ESCRIBIR UN SCRIPT DE BASH QUE PREGUNTE LA EDAD AL USUARIO Y LE DEVUELVA UN MENSAJE ORIGINAL SOBRE LO QUE LE OCURRIRÁ CUANDO CUMPLA SU EDAD + 5.
 
-echo "Crear primer archivo en el que obetenedremos la informacion"
+echo "Crear archivo en el que vamos a dejar la información"
 
 read input
 
 touch $input
 
-echo "Donde estoy?"
-
-pwd
+echo "Vamos a buscar la información de opentraveldata y ahora estás en" pwd
 
 sleep 2
 
-echo "A donde me llevas?"
+echo "Entonces vamos a irnos a la carpeta con el comando cd y los puntos para volver"
 
 cd ../..
 
-echo "Primero aquí"
+echo "Estamos en" pwd " abrimos ahora con cd opentraveldata"
 
 cd opentraveldata
 
 pwd
 
-echo "Luego a donde quieres ir"
+echo "Para ver la lista de archivos utilizamos el comando ls"
 
 sleep 2
-
-echo "Este es la lista de archivos"
 
 ls -lsh
 
 sleep 2
 
-echo "Ahora ves que optd_por_public.csv es el mas grande. Vamos a hacer wc"
+echo "Observamos que optd_por_public.csv es el mas grande. Vamos a hacer wc"
 
+echo "Cargando...."
+sleep 2
+echo "........................"
+sleep 1
+echo "**......................"
+sleep 1
+echo "********................"
+sleep 1
+echo "****************........"
+sleep 1
+echo "***********************."
 wc optd_por_public.csv
 
 echo "¿Funcionó?"
+sleep 3
+echo "Ahora vamos a ver el número de palabras que contienen las 5 primeras líneas de Finn.txt"
+sleep 1
+
+echo pwd "el archivo Finn.txt está en: "
