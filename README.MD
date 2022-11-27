@@ -1,7 +1,9 @@
 README
 
-1 Lluís Pellejà Soldevila
+Equipo:
 
-2 Silvia Caminero Huertas
+1) Lluís Pellejà Soldevila
 
-3 Pablo Villar del Castillo
+2) Silvia Caminero Huertas
+
+3) Pablo Villar del Castillo
