@@ -87,5 +87,16 @@ sleep 3
 
 echo "Y vamos a ver cuantas palabras hay en el head de las 5 primeras lineas del archivo Finn.txt"
 
-head -5 Finn.txt | wc -w Finn.txt
+head -5 Finn.txt | wc -w
 
+sleep 3
+
+echo "IMPRIMIR LAS 3 PRIMERAS LINEAS DE TEXT_EXAMPLE.TXT CON EL NÚMERO DE LÍNEA DELANTE.."
+
+ls -l
+
+wc -l Text_example.txt | head -3
+
+sleep 4
+
+head -n 3 Text_example.txt | wc -w
