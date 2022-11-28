@@ -93,10 +93,19 @@ sleep 3
 
 echo "IMPRIMIR LAS 3 PRIMERAS LINEAS DE TEXT_EXAMPLE.TXT CON EL NÚMERO DE LÍNEA DELANTE.."
 
-ls -l
+sleep 4
 
-wc -l Text_example.txt | head -3
+nl Text_example.txt | head -n 3
 
 sleep 4
 
-head -n 3 Text_example.txt | wc -w
+echo "USE TEXT_EXAMPLE.TXT TO GENERATE A NEW FILE WITH THE SAME CONTENT BUT WITH LINE NUMBER AT THE BEGINNING OF EACH LINE."
+
+sleep 2
+
+echo "Copiamos el archivo en nuestro repositorio"
+
+sleep 3
+
+cp Text_example.txt /home/dsc/Documents/GIT/kschool_master/Proyecto-Shell
+
