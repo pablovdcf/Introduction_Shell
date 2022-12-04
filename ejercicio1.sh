@@ -21,9 +21,9 @@ pwd
 
 sleep 2
 
-echo "Entonces vamos a irnos a la carpeta con el comando cd y los puntos (..) para volver"
+echo "Entonces vamos a irnos a la carpeta con el comando cd y los puntos (..) para volver pero en este caso utilizaremos solo cd para volver a home/dsc"
 
-cd ../../../..
+cd 
 sleep 3
 pwd
 
@@ -42,9 +42,33 @@ echo "Para ver la lista de archivos utilizamos el comando ls"
 
 sleep 2
 
-ls -lsh
+ls -lSh
 
 sleep 2
+
+echo "Llevaremos esta información al primer archivo para el ejercicio 1. Necesitarás darle un nombre al output"
+read OUTPUT
+ls -lSh | head -n 2 > $OUTPUT
+
+sleep 4
+
+echo "Ya tenemos creado el primer archivo vamos a comprobarlo con ls"
+
+sleep 3
+ls -lrt
+
+sleep 5
+
+echo "Vamos a llevarlo a nuestra carpeta para tenerlo todo en el mismo fichero"
+
+Sleep 3
+mv $OUTPUT /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell/
+sleep 3
+
+echo "Vemos que ya no está aquí"
+
+ls -l
+sleep 4
 
 echo "Observamos que optd_por_public.csv es el mas grande. Vamos a hacer wc"
 
@@ -64,8 +88,8 @@ sleep 1
 
 wc optd_por_public.csv
 
-echo "¿Funcionó? Observamos la información del archivo optd_por_public.csv"
-sleep 3
+echo "¿Funcionó? Entonces, hemos visto la información del archivo optd_por_public.csv y la hemos guardado en el archivo que hemos creado anteriormente"
+sleep 5
 
 echo "Ahora vamos a ver el número de palabras que contienen las 5 primeras líneas de Finn.txt"
 sleep 2
@@ -91,6 +115,13 @@ head -5 Finn.txt | wc -w
 
 sleep 3
 
+echo "Llevamos esta información al siguiente archivo para el ejercicio 2, dale un nombre:"
+
+read OUTPUT2
+
+head -5 Finn.txt | wc -w > $OUTPUT2
+
+
 echo "IMPRIMIR LAS 3 PRIMERAS LINEAS DE TEXT_EXAMPLE.TXT CON EL NÚMERO DE LÍNEA DELANTE.."
 
 sleep 4
@@ -99,13 +130,21 @@ nl Text_example.txt | head -n 3
 
 sleep 4
 
-echo "USE TEXT_EXAMPLE.TXT TO GENERATE A NEW FILE WITH THE SAME CONTENT BUT WITH LINE NUMBER AT THE BEGINNING OF EACH LINE."
+echo "Ejercicio 3 llevamos esto a un nuevo archivo:"
+
+read OUTPUT3
+
+nl Text_example.txt | head -n 3 > $OUTPUT3
 
 sleep 2
 
-echo "Copiamos el archivo en nuestro repositorio"
+echo "Copiamos el archivo en nuestro repositorio utilizando una ruta absoluta"
 
 sleep 3
 
-cp Text_example.txt /home/dsc/Documents/GIT/kschool_master/Proyecto-Shell
+cp Text_example.txt /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell
+
+
+echo "Vamos a generar un archivo que contenga el shebang en la primera línea y en la segunda el usuario y la fecha de creación del archivo"
+
 
