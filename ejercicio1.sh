@@ -162,7 +162,7 @@ sleep 3
 
 mv $OUTPUT2 /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell/
 
-echo "IMPRIMIR LAS 3 PRIMERAS LINEAS DE TEXT_EXAMPLE.TXT CON EL NÚMERO DE LÍNEA DELANTE.."
+echo "En el ejercicio 3 hay que: IMPRIMIR LAS 3 PRIMERAS LINEAS DE TEXT_EXAMPLE.TXT CON EL NÚMERO DE LÍNEA DELANTE.."
 
 sleep 4
 
@@ -175,6 +175,14 @@ echo "Ejercicio 3 llevamos esto a un nuevo archivo:"
 read OUTPUT3
 
 nl Text_example.txt | head -n 3 > $OUTPUT3
+
+sleep 2
+
+echo "Vamos a llevarlo a la misma carpeta que el resto de ejercicios"
+
+sleep 2
+
+mv $OUTPUT3 /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell/
 
 sleep 2
 
@@ -222,4 +230,31 @@ cat $OUTPUT4
 
 sleep 3
 
-echo "Fantástico"
+echo "Fantástico. Vamos a llevarlo con todos los ejercicios"
+
+sleep 3
+
+mv $OUTPUT4 /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell/
+
+sleep 3
+
+echo "Si todo ha salido bien podras ver que aparecen todos los archivos creados en la carpeta de Proyecto Shell"
+
+cd 
+
+sleep 3
+
+echo "Nos dirigimos a la carpeta"
+
+sleep 2
+
+cd /home/dsc/Documents/kschool_master/GIT/Proyecto-Shell/
+
+echo "Vemos la lista con ls"
+
+sleep 2
+
+ls -l
+
+echo "Lo lograste. Enhorabuena!"
+
