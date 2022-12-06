@@ -1,7 +1,11 @@
 #!/bin/bash
 
-echo "¿Cuántos años tienes?
+echo "Ingresa tu edad:"
+read edad
 
-read input
-
-#echo "Cuando cumplas "  $[[($AGE + 5)]] " vas a ser millonario"
+if [[ $edad =~ ^[0-9]+$ ]]; then
+  let edad+=5
+  echo "Dentro de cinco años tendrás $edad años tu futuro será brillante como data scientist. Sigue así!."
+else
+  echo "La edad que ingresaste no es un número entero."
+fi
