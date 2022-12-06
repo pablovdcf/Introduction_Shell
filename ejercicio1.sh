@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 #1. OBTENER LA INFORMACIÓN (PERMISSIONS, SIZE, MODIFICATION DATE ETC.) SOBRE EL ARCHIVO MÁS GRANDE DE LA CARPETA OPENTRAVELDATA .
 #2. OBTENER CUÁNTAS PALABRAS CONTIENEN LAS 5 PRIMERAS LÍNEAS DEL ARCHIVO FINN.TXT.
@@ -194,7 +194,7 @@ read OUTPUT4
 
 echo "Vamos a poner la primera linea de tu archivo !/bin/bash"
 
-echo "#! /bin/bash" > $OUTPUT4
+echo "#!/bin/bash" > $OUTPUT4
 
 sleep 3
 
@@ -209,9 +209,8 @@ sleep 5
 echo "Genial! a por la segunda linea, utilizaremos el método de append"
 
 sleep 2
-users=usuario
-date -r $OUTPUT4=fecha_archivo
-echo "Este es tu $usuario" >> $OUTPUT4 | echo "y el archivo fue creado en $fecha_archivo" >> $OUTPUT4 
+
+echo "Este es tu usuario: 'whoami' y este archivo fue creado: 'date -r $OUTPUT4'" >> $OUTPUT4
 
 sleep 3
 
