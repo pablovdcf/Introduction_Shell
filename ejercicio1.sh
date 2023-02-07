@@ -18,7 +18,7 @@ echo "Hola y bienvenid@ a mi primer script con bash"
 
 sleep 3
 
-echo "Vamos a buscar la información de un la carpeta  opentraveldata y ahora estás en la carpeta de Proyecto-Shell"
+echo "Vamos a buscar la información de un la carpeta opentraveldata y ahora estás en la carpeta de Proyecto-Shell"
 
 pwd
 
@@ -30,7 +30,7 @@ cd
 sleep 3
 pwd
 
-echo "Estamos en home/dsc y desde ahí  nos vamos ahora a data/shell/ y abrimos ahora con cd opentraveldata"
+echo "Estamos en home/dsc y desde ahí nos vamos ahora a data/shell/ y abrimos ahora con cd opentraveldata"
 
 cd data/opentraveldata
 
@@ -257,4 +257,3 @@ sleep 2
 ls -l
 
 echo "Lo lograste. Enhorabuena!"
-
